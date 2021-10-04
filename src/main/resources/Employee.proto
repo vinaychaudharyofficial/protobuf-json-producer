@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package demo;
+
+option java_package = "com.protobuf.producer.protobufproducer.emp";
+
+message Emp {
+    int32 id = 1;
+    string emp_name = 2;
+    repeated Company companies = 3;
+}
+message Company {
+    int32 id = 1;
+    string company_name = 2;
+    string location = 3;
+    string email = 4;
+}
